@@ -6,7 +6,7 @@ class Pazpar2 < Formula
   sha1 '2be29efecc4f0ed5a6a300638b7ef6577d1e34e4'
 
   depends_on 'pkg-config' => :build
-  depends_on 'yaz'
+  depends_on 'ssp/ssp/yaz'
 
   def install
     system "./configure", "--disable-dependency-tracking",
